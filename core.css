@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Varela&display=swap');
+body    
+{
+    background-color: #1b1b1b;
+}
+.core {
+    margin: 30px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    width: 60%;
+    height: 50vh;
+    /* background-color: rgb(255, 0, 0); */
+    font-family: 'Varela', sans-serif;
+    color: #ffffff;
+}
+
+.subtitle {
+    /* margin-top: 70%; */
+    overflow: auto;
+}
+
+.core h1 {
+    font-weight: 800;
+}
+
+.core h4 {
+    font-weight: 400;
+}
+
+.resume {
+    background-color: #1e1e1e;
+    color: #ffff;
+    width: 152px;
+    /* Flexbox Start */
+    justify-content: center;
+    /* Flexbox End */
+    font-size: 14px;
+    font-weight: bold;
+    border: 3px solid #1b1b1b;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: 0.2s;
+
+    left: 47%;
+    clear: both;
+    display: block;
+    position:absolute;
+    transform: translateX(-50%);
+    bottom: -80px;
+}
+
+.resume:hover {
+    color: #ff4a02;
+    cursor: pointer;
+}

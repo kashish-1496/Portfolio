@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <link rel="icon" type="image/jpg" href="images/logo.jpg">
+    <title>Welcome</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="stylesheets/interface.css">
+    <link rel="stylesheet" href="stylesheets/core.css">
+    <!-- <link rel="stylesheet" href="stylesheets/sidebar.css"> -->
+    <link rel="stylesheet" href="stylesheets/icons.css">
+    <link rel="stylesheet" href="stylesheets/media-queries.css">
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/72b5eabdad.js" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <div class="navlinks"></div>
+    <div class="sidebar">
+        <div class="sidebar-items">
+            <a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        </div>
+        <div class="sidebar-items">
+            <a href="#"><i class="fa-solid fa-info"></i><span>About</span></a>
+        </div>
+    </div> 
+        <!-- this is origional one if we want sidebar then use this    x     -->
+    </div>
+
+    <div class="container">
+        <div id="top">
+
+            <div class="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="layer"></div>
+        <div id="bottom"></div>
+    </div>
+    <div id="logo">
+        <img src="guddo.jpeg" alt="logo">
+        <span>KASHISH AGRAWAL</span>
+    </div>
+
+    <div class="core">
+        <div class="title">
+            <h1>Hii !! I'm Kashish Agrawal </h1>
+            <h2>Good to see you here</h2>
+        </div>
+
+        <div class="subtitle">        
+            <form action="Kashish's Resume.pdf">
+                <button class="resume">Get my Resume</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="social">
+        <a id="github" href="https://github.com/kashish-1496"><i class="fa-brands fa-github"></i><span>Github</span></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/kashish-agrawal-427a6a275"><i class="fa-brands fa-linkedin-in"></i><span>Linkedin</span></a>
+        <a id="mail" href="mailto:kashishagrawal1496@gmail.com"><i class="fa-solid fa-envelope"></i><span>Gmail</span></a>
+    </div>
+
+</body>
+<script>
+    {
+        let navtoggle = document.querySelector(".hamburger");
+    
+        let sidebar = document.querySelector(".navlinks");
+    
+        navtoggle.addEventListener("click", function(){
+            if(navtoggle.firstElementChild.classList.contains("fa-bars"))
+            {
+                console.log(navtoggle.firstElementChild.classList.replace("fa-bars","fa-times"));
+            }
+            else{
+                console.log(navtoggle.firstElementChild.classList.replace("fa-times","fa-bars"));
+            }
+            sidebar.classList.toggle("show-navlinks");
+        })      
+    
+    }
+    </script>
+</html>
